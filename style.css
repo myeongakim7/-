@@ -1,0 +1,135 @@
+/* css */
+
+@font-face {
+  font-family: "Digital 7";
+  src: url(font/digital-7.ttf);
+}
+
+body {
+  font-family: "Digital 7";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg {
+  background-image: url(./images/5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+}
+#clock {
+  background-color: black;
+  min-height: 100%;
+  min-width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 300px;
+  box-shadow: 5px 10px 1px red;
+}
+
+.clock-box {
+  width: 360px;
+  height: 217px;
+  background-color: #462718;
+  border-radius: 10px;
+  position: absolute;
+  box-shadow: 5px -5px 1px #452617;
+}
+.clock-box1 {
+  width: 345px;
+  height: 198px;
+  background-color: #d6c5b3;
+  border-radius: 10px;
+  z-index: 4;
+  position: absolute;
+  top: 9px;
+  left: 7px;
+}
+.clock-box2 {
+  width: 254px;
+  height: 160px;
+  background: linear-gradient(200deg, #735e36, #9f8b67, #cdbba5);
+  border-radius: 40px;
+  position: absolute;
+  top: 18px;
+  left: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 2px #ac9e90;
+}
+.year {
+  font-size: 25px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+#day {
+  position: absolute;
+  right: 30px;
+  bottom: 80px;
+  font-size: 20px;
+}
+.now {
+  font-size: 70px;
+  position: absolute;
+  bottom: 15px;
+}
+#ampm {
+  position: absolute;
+  bottom: 80px;
+  left: 25px;
+  font-size: 20px;
+}
+
+.volume {
+  width: 56px;
+  height: 84px;
+  background-color: #2b0f07;
+  z-index: 4;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+}
+
+.volume .box {
+  width: 56px;
+  height: 5px;
+  background-color: #3f2818;
+  margin-bottom: 4px;
+}
+.btn {
+  width: 56px;
+  height: 80px;
+  background-color: #4e2e08;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.btn .rec {
+  width: 24px;
+  height: 24px;
+  background-color: #c6a469;
+  border-radius: 50%;
+}
+
+/* 
+1. 자바) 시계 am,pm추가하기
+ok2. 배경 서치
+ok3. 글꼴 서치 - 다폰트?  <<완 / 폰트등록
+4. 시계 다리만들기 (사다리꼴-구글)
+5. 옮겨보기
+6.배경 설정
+7.시계 배경 그라데이션 해보기
+*/
